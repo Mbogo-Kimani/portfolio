@@ -192,7 +192,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   animation: typewriter 6s steps(50) infinite;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 .landing-text p {
@@ -202,7 +202,7 @@ body {
 }
 
 .landing-image img {
-  width: 40%; /* Adjusted width for large screens */
+  width: 45%; /* Adjusted width for large screens */
   max-width: 800px;
   border-radius: 5px;
 }
@@ -210,7 +210,7 @@ body {
 /* Adjust image width for small screens */
 @media screen and (max-width: 768px) {
   .landing-image img {
-    width: 30%; /* Adjusted width for small screens */
+    width: 40%; /* Adjusted width for small screens */
     margin-top: 20px; /* Add margin to separate from text */
   }
 }
@@ -234,7 +234,7 @@ body {
 }
 
 .hire-btn{
-  border-style: 2px solid coral;
+  border: 2px solid #ff4500;
   background-color: transparent;
   padding: 12px 24px;
   color: white;
