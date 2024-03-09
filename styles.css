@@ -258,7 +258,6 @@ body {
 
 /* Social Icons Styles */
 .social-icons {
-  margin-bottom: 50px:
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,7 +266,7 @@ body {
 }
 
 .social-icons img {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   max-width: 30px;
   margin-right: 10px;
   transition: transform 0.3s ease;
