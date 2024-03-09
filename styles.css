@@ -101,6 +101,17 @@ body {
   }
 }
 
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    left: 0; /* Show the mobile menu */
+  }
+
+  .mobile-menu-overlay {
+    display: block; /* Show the overlay */
+  }
+}
+
 
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
