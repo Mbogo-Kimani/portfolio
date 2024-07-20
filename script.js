@@ -119,3 +119,16 @@ function animateSections() {
 
 // Add event listener for scrolling to trigger the animations
 window.addEventListener('scroll', animateSections);
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Autoplay and pause videos on mouseover and mouseout
+    const videos = document.querySelectorAll(".item.video video");
+    videos.forEach(video => {
+        video.addEventListener("mouseover", function() {
+            this.play();
+        });
+        video.addEventListener("mouseout", function() {
+            this.pause();
+        });
+    });
+});
