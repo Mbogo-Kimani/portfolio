@@ -204,7 +204,10 @@ body {
 .landing-image img {
   width: 45%; /* Adjusted width for large screens */
   max-width: 800px;
-  border-radius: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 60px;
 }
 
 /* Adjust image width for small screens */
