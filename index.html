@@ -403,11 +403,11 @@
   <div class="container">
     <h2>Contact Me</h2>
     <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="text" placeholder="Phone Number (optional)">
-        <textarea placeholder="Your Message"></textarea required>
+      <form action="send_email.php" method="post">
+        <input type="text" placeholder="Your Name" required name="your name">
+        <input type="email" placeholder="Your Email" required name="email">
+        <input type="text" placeholder="Phone Number (optional)" name="number">
+        <textarea placeholder="Your Message" name="message"></textarea required>
         <button type="submit">Send Message</button>
       </form>
     </div>
