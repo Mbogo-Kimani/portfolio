@@ -133,20 +133,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
- document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = form.name.value;
+        const email = form.email.value;
+        const message = form.message.value;
 
-            const formData = new FormData(this);
-
-            fetch('/api/sendEmail', {
-                method: 'POST',
-                body: formData,
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert(data.message);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-        });
+        if (name && email && message) {
+            alert('Thank you for your message, ' + name + '! We will get back to you soon.');
+            form.reset();
+        } else {
+            alert('Please fill out all fields.');
+        }
+    });
+});
