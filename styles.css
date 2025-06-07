@@ -278,7 +278,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; /* Ensure icons wrap to next line on small screens */
-  margin-top: 20px; /* Add margin between buttons and icons */
+  margin-top: 20px;
+  margin-bottom: 30px; /* Add margin between buttons and icons */
 }
 
 .social-icons img {
