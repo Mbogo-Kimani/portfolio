@@ -39,6 +39,7 @@ body {
   left: 0;
   width: 100%;
   transition: top 0.3s; /* Add smooth transition */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .logo {
@@ -471,6 +472,7 @@ body {
   font-size: larger;
   color: white;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 .skill-icon {
@@ -480,7 +482,11 @@ body {
 
 .skill-icon img{
   margin-top: 30px;
-  width: 45px;
+  width: 45px;9
+}
+
+.skill-icon:hover{
+  cursor: pointer;
 }
 
 .front-end{
@@ -523,7 +529,9 @@ body {
   border-color: #007bff transparent transparent transparent; /* Set the color of the arrow */
   }
 
-  
+  .tooltip-left:hover{
+    cursor: pointer;
+  }
 
 
 
@@ -657,6 +665,7 @@ h2 {
   color: black;
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .project-grid {
@@ -671,11 +680,12 @@ h2 {
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
 
 .project-square img {
   width: 100%;
-  height: auto;
+  height: fit-content;
   transition: transform 0.3s ease;
 }
 
@@ -685,7 +695,7 @@ h2 {
 
 .project-details {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
@@ -705,12 +715,14 @@ h2 {
   color: white;
   font-size: 18px;
   margin-bottom: 10px;
+  top: -60px;
 }
 
 .project-details p {
   font-weight: 5  00;
   color: #ccc;
   font-size: 14px;
+  top: -60px;
 }
 
 /* Animation for project squares */
