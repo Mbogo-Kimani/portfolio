@@ -234,6 +234,10 @@ body {
   .social-icons{
     margin-bottom: 150px;
   }
+
+  .about-section{
+    margin-top: 80px;
+  }
 }
 
 /* Buttons Styles */
