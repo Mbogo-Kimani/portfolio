@@ -835,6 +835,9 @@ h2 {
   .client-div {
     width: calc(100% / 3); /* Display three divs per row on smaller screens */
   }
+  .contact-form{
+    width: 100%;
+  }
 }
 
 .contact-section {
